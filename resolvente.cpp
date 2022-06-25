@@ -17,14 +17,16 @@ int main(){
     cout<<"Introduzca el numero B: "<<endl; cin>> numB;
     cout<<"Introduzca el numero C: "<<endl; cin>> numC;
 
-    //Si el resultado 1 es igual al resultado 2, la ecuación solo tiene una solucion, si no, imprimo los dos resultados
+    //Si lo que va dentro de la raiz es mayor o igual a cero se ejecuta la operación
     if((pow(numB,2) - 4 * numA * numC)>=0){
         resultado1 = (-numB + sqrt(pow(numB,2) - 4 * numA * numC)) / (2 * numA);
         resultado2 = (-numB - sqrt(pow(numB,2) - 4 * numA * numC)) / (2 *numA);
-        if(resultado1 == resultado2){
+
+        //Si el resultado es igual imprimimos la unica solucion
+        if(resultado1 == resultado2){ 
             cout<<"La ecuacion solo tiene un resultado en los numeros reales, y es " <<resultado1 <<endl;
         }
-        else{
+        else{ //Si no, por separado
            cout<<"El resultado para x1 es: "<< resultado1 <<endl; cout<<"El resultado para x2 es: "<< resultado2 <<endl; 
         }
     }
@@ -32,6 +34,5 @@ int main(){
         cout<<"Su ecuación no tiene solución ya que da un numero imaginario";
     }
     
-    //cout<<(pow(numB,2) - 4 * numA * numC);
     return 0;
 }
