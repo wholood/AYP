@@ -2,7 +2,7 @@
 using namespace std;
 
 int main (){
-    int AT,h,b,AC,r;
+    int AT,h,b,AC,r
 
     
 
