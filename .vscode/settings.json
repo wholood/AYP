@@ -1,3 +1,7 @@
 {
-    "C_Cpp.default.cppStandard": "c++17"
+    "C_Cpp.default.cppStandard": "c++17",
+    "errorLens.enableOnDiffView": true,
+    "errorLens.onSave": false,
+    "errorLens.scrollbarHackEnabled": true,
+    "errorLens.statusBarColorsEnabled": true
 }
