@@ -24,7 +24,12 @@ int main (){
 
     //Para saber el angulo entre ambas agujas basta con restar sus angulos en relacion al punto 0
 
-    resultado = Gh-Gm;
+    if(Gh>Gm){
+        resultado = Gh-Gm;
+    }
+    else{
+        resultado = Gm-Gh;
+    }
 
     cout<<"El angulo entre las agujas de "<<h<<":"<<m<<" es "<<resultado;
 
